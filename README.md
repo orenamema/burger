@@ -8,7 +8,6 @@ I have created a burger logger with MySQL, Node, Express, Handlebars and a homem
 ## Technology Used
 * [MySQL](https://www.npmjs.com/package/mysql)
 * [InquirerJs](https://www.npmjs.com/package/inquirer/v/0.2.3)
-* [console.table](https://www.npmjs.com/package/console.table)
 * [Nodejs](https://nodejs.org/en/)
 
 ## Application
