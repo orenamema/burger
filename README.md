@@ -12,7 +12,7 @@ I have created a burger logger with MySQL, Node, Express, Handlebars and a homem
 
 ## Application
 
-![alt text](https://github.com/orenamema/RestaurantApp/raw/master/assets/images/.gif)
+![alt text](https://github.com/orenamema/burger/raw/master/assets/images/.gif)
 
 ## Code
 
