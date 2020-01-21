@@ -5,5 +5,30 @@ background-color: rgb(247, 205, 127);
 .burgerpic {
     height: 300px;
     width: 200px;
+    margin-left: 45%;
+}
+input {
+    height: 80px;
+    width: 400px;
     margin-left: 40%;
+}
+h5 {
+    margin-left: 43%;
+  
+}
+button {
+    margin-left: 50%; 
+    margin-top: 10px;
+    height: 30px;
+    width: 60px; 
+    border-radius: 5px;
+    background-color:rgb(131, 131, 201) ;
+    color: white;
+    
+}
+
+h2 {
+    margin-left: 46%;  
+    color: red; 
+    font-family: 'Courier New', Courier, monospace;
 }
