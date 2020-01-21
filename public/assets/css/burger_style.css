@@ -1,0 +1,9 @@
+body {
+background-color: rgb(247, 205, 127);
+}
+
+.burgerpic {
+    height: 300px;
+    width: 200px;
+    margin-left: 40%;
+}
