@@ -1,60 +1,54 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
-$(function() {
-    $(".change-burger").on("click", function(event) {
+$(function () {
+
+    $(".change-devour").on("click", function (event) {
       var id = $(this).data("id");
-      var newBurger = $(this).data("newburger");
+      var newDevoured = $(this).data("newdevoured");
   
-      var newState = {
-        devoured: newBurger
+      var newDevouredState = {
+        devoured: newDevoured
       };
-  
-      // Send the PUT request.
+      // Send PUT request
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newState
+        data: newDevouredState
       }).then(
-        function() {
-          console.log("changed burger to", newState);
-          // Reload the page to get the updated list
+        function () {
+          console.log("changed devoured status to", newDevoured);
           location.reload();
         }
       );
     });
   
-    $(".create-form").on("submit", function(event) {
-      // Make sure to preventDefault on a submit event.
+    $("#create-burger").on("click", function (event) {
       event.preventDefault();
-  
+      console.log($("#bur").val().trim())
       var newBurger = {
-        name: $("#ca").val().trim(),
-        devoured: $("[name=devoured]:checked").val().trim()
-      };
-  
-      // Send the POST request.
+        burger_name: $("#bur").val().trim(),
+        devoured: $("#dev_").val().trim()
+    };
+      // Send POST request
       $.ajax("/api/burgers", {
         type: "POST",
         data: newBurger
       }).then(
-        function() {
+        function () {
           console.log("created new burger");
-          // Reload the page to get the updated list
           location.reload();
         }
       );
     });
   
-    // $(".delete-burger").on("click", function(event) {
-    //   var id = $(this).data("id");
+    $(".delete-burger").on("click", function (event) {
+      var id = $(this).data("id");
+      // Send DELETE request
+      $.ajax("/api/burgers/" + id, {
+        type: "DELETE",
+      }).then(
+        function () {
+          console.log("deleted burger", id);
+          location.reload();
+        }
+      );
+    });
   
-    //   // Send the DELETE request.
-    //   $.ajax("/api/burgers/" + id, {
-    //     type: "DELETE"
-    //   }).then(
-    //     function() {
-    //       console.log("deleted burger", id);
-    //       // Reload the page to get the updated list
-    //       location.reload();
-    //     }
-    //   );
-    // });
-  });
+  })

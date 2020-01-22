@@ -1,41 +1,43 @@
 
 <img class="burgerpic" src ="/assets/img/burger.png">
-<div class="row">
-<div class="column">
-<div class="column">
-
- </div>   
-</div>
+<div class="flex-container" style="display: flex; flex-direction:row; justify-content: space-around">
+    <div class="row" style="width: 100%;">
+        <div class="col">
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devour=true}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devour=false}}
+                {{/if}}
+                {{/each}}  
+            </ul>      
+        </div>
+    </div>
 </div>
 <h2>Eat-Da-Burger!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
 
 {{!-- <button type="add">Add Burger</button> --}}
 <form class="create-form">
 
   <div class="form-group">
-    <input type="text" id="ca" name="name">
+    <input type="text" id="bur" name="name">
    
   </div>
   <div class="form-group">
   </div>
+  <input type="hidden" id="dev_" name="devoured" value="0">
 
-  <button type="submit">Submit</button>
+  <button type="submit" id="create-burger">Submit</button>
   <h5>Enter a burger you want to eat Click the "Submit" button</h5>
 
 </form>
