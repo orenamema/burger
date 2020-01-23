@@ -4,7 +4,7 @@
 
 ## Introduction
 
-I have created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. The user can use this application to keep track of its favorite burgers and of the type and number of burgers it has eaten over time. This application can also be used by a restaurant to keep track of their burger orders and determine what are their most popular items, this way they can adapt to the demand and increase their sales.
+I have created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. The user can use this application to keep track of its favorite burgers and of the type and number of burgers it has eaten over time. This application can also be used by a restaurant to keep track of their burger orders and determine what are their most popular items, this way they can adapt to the demand and increase their sales.
 
 ## Technology Used
 
