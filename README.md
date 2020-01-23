@@ -60,7 +60,7 @@ $(function () {
       );
     });
 ````
-The code above is the part of the code that let's us change the state of the burger to devoured.
+The code above is the part of the code that let's us change the state of the burger to devoured. It also sends the `PUT` request then reload the page with the updated data, in this case the list of burgers.
 
 ## Learning Points
 
