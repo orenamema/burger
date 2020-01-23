@@ -64,7 +64,7 @@ The code above is the part of the code that let's us change the state of the bur
 
 ## Learning Points
 
-While building this application I've used Handlebars which has been very useful as it allowed me to keep the view and code seperated.
+While building this application I've used `Express Handlebars` which has been very useful as it allowed me to keep the view and code seperated.
 
 ## Author
 
