@@ -1,9 +1,18 @@
 <li>
 	{{burger_name}}
+<div class="row"style="margin-top: -5%">
+	<div class="text-row">
+		
+		<button class="change-devour" style="margin-left:60% "data-id="{{id}}" data-newdevoured="{{devour}}">
+		{{#if devoured}}DEVOUR AGAIN!{{else}}DEVOUR IT!{{/if}}
 
-	<button class="change-devour" data-id="{{id}}" data-newdevoured="{{devour}}">
-		{{#if devoured}}EAT AGAIN!{{else}}DEVOUR IT!{{/if}}
 	</button>
-
-	<button class="delete-burger"  data-id="{{this.id}}">TRASH</button>
+<div class="row"style="margin-left:60%; margin-top: -7%">
+	<div class="text-row">
+	<button class="delete-burger" style="margin-top:-50% " data-id="{{this.id}}">TRASH</button>
+			
+			</div>
+  		</div>
+	</div>
+  </div>
 </li>
